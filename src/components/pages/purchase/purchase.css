@@ -1,0 +1,19 @@
+.purchase-header {
+  width: 21rem;
+}
+.phone {
+  padding: 18px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.amount-button {
+  width: 45%;
+  padding: 15px;
+  border-radius: 16px;
+  border: none;
+  color: #adadad;
+}
+.buttons-container {
+  justify-content: space-between;
+}
