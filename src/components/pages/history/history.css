@@ -1,0 +1,17 @@
+.airtime-card {
+  width: 21rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+.airtime-cont {
+  display: flex;
+  align-items: center;
+}
+.airtime-details {
+  margin-right: 20px;
+}

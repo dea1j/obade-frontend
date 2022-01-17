@@ -1,9 +1,10 @@
 import React from 'react'
-import TransactionHistory from '../history/TransactionHistory';
+import Transactions from '../history/Transactions'
+import Footer from '../../Footer/Footer'
 import './dashboard.css'
 import WALLET from '../../../assets/img/wallet.svg';
-import AIRTIME from '../../../assets/img/airtime-purchase.svg';
-import DATA from '../../../assets/img/data-purchase.svg';
+import AIRTIME from '../../../assets/img/airtimeLogo.svg';
+import DATA from '../../../assets/img/dataLogo.svg';
 import CHECK from '../../../assets/img/Check-badge.png';
 import ARROW from '../../../assets/img/Arrow-forward.png';
 import BELL from '../../../assets/img/bell.png';
@@ -21,7 +22,8 @@ export default function Dashboard() {
                         <img src={BELL} alt='notification' />
                     </div>
                 </div>
-                <div className='wallet-balance p-3'>
+                <div className='dboard-contents'>
+                    <div className='wallet-balance p-3'>
                     <div className='balance'>
                         <p>Wallet Balance</p>
                         <h1>N20,000</h1>
@@ -30,7 +32,7 @@ export default function Dashboard() {
                         <img src={WALLET} alt='wallet' />
                     </div>
                 </div>
-                <div className='option mb-5'>
+                <div className='option my-4'>
                     <div className='airtime'>
                             <img src={AIRTIME} />
                         <p>Purchase Airtime</p>
@@ -74,18 +76,11 @@ export default function Dashboard() {
                 </div>
                 <div className='history'>
                     <h3>Transaction History</h3>
-                    <TransactionHistory />
+                    <Transactions />
                 </div>
-                <div className='navigation'>
-                    <div className='nav-contents'>
-                        <div>Home</div>
-                        <div>History</div>
-                        <div>Wallet</div>
-                        <div>My Cards</div>
-                        <div>Profile</div>
-                    </div>
                 </div>
             </div>
+                <Footer />
         </div>
     )
 }

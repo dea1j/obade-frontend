@@ -1,0 +1,15 @@
+.nav-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7px;
+}
+.navigation {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 23rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px -4px 8px 0px #0000000d;
+  text-align: center;
+}

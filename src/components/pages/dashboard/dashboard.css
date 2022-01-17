@@ -64,16 +64,6 @@ p {
   background-color: #1f505b;
 }
 
-/* .navigation {
-  position: absolute;
-  bottom: 0;
-} */
-
-.nav-contents {
-  display: flex;
-  flex-direction: row;
-}
-
 .wallet-balance {
   display: flex;
   flex-direction: row;
@@ -121,4 +111,12 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.airtime p {
+  width: 50%;
+  text-align: center;
+}
+.data p {
+  width: 50%;
+  text-align: center;
 }
