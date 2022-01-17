@@ -10,7 +10,7 @@ export default function purchaseAirtime() {
                     <img src={BACK} alt='arrow' />
                 </div>
                 <div className='purchase-header mt-5'>
-                    <h3>Purchase Airtime</h3>
+                    <h2>Purchase Airtime</h2>
                     <p>Who are you buying for ?</p>
                 </div>
                 <div>
@@ -29,7 +29,12 @@ export default function purchaseAirtime() {
                             <input type='tel' placeholder='Phone Number' className='phone brder' />
                         </div>
                         <div className='form-group mb-4'>
-                            <input type='tel' placeholder='Mobile Network' className='phone brder' />
+                            <select className='phone brder'>
+                                <option value="0">Mobile Network</option>
+                                <option value="1">MTN</option>
+                                <option value="2">AIRTEL</option>
+                                <option value="3">GLO</option>
+                            </select>
                         </div>
                         <div className='form-group mb-4'>
                             <input type='tel' placeholder='Amount' className='phone brder' />
@@ -47,7 +52,11 @@ export default function purchaseAirtime() {
                         </div>
 
                         <div className='form-group mb-5'>
-                            <input type='tel' placeholder='Select Payment Method' className='phone brder' />
+                            <select className='phone brder'>
+                                <option value="0">Select Payment Method</option>
+                                <option value="1">VISA- 2334 5666 3333 4566</option>
+                                <option value="2">MASTER- 2334 5666 3333 4566</option>
+                            </select>
                         </div>
 
                         <button className='btn'>Buy</button>

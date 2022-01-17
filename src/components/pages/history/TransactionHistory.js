@@ -8,7 +8,6 @@ export default function TransactionHistory() {
         <div className='dashboard'>
             <div className='dashboard-container'>
                 <Transactions />
-                
             </div>
         </div>
     )

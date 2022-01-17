@@ -11,8 +11,7 @@ import LandingPage from "./components/pages/landingPage/Index";
 import SignUp from "./components/auth/SignUp/SignUp";
 import SignIn from "./components/auth/SignIn/SignIn";
 import ForgotPassword from "./components/auth/ForgotPassword/ForgotPassword";
-import ResetPassword from "./components/auth/ForgotPassword/ResetPassword";
-
+import NewPassword from "./components/auth/ForgotPassword/NewPassword";
 
 import Dashboard from "./components/pages/dashboard/Dashboard";
 import TransactionHistory from "./components/pages/history/TransactionHistory";
@@ -20,7 +19,7 @@ import Profile from "./components/pages/profile/Profile";
 import MyWallet from "./components/pages/wallet/MyWallet";
 import PurchaseAirtime from "./components/pages/purchase/purchaseAirtime";
 import PurchaseData from "./components/pages/purchase/purchaseData";
-import AirtimeSuccess from "./components/pages/purchase/airtimeSuccess";
+import AirtimeSuccess from "./components/pages/purchase/AirtimeSuccess";
 
 // import ProtectedRoute from "./components/ProtectedRoute";
 import { UserContextProvider } from "./utils/context/UserContext";
@@ -37,8 +36,8 @@ export default function AppRoutes() {
                 <Route path="/login" element={<SignIn />} />
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route
-                path="account/password-reset"
-                element={<ResetPassword />}
+                path="/password-reset"
+                element={<NewPassword />}
                 />
                 <Route path="/" element={<Navigate replace to="/landingPage" />} />
                 {/* )Page not found Syntax */}

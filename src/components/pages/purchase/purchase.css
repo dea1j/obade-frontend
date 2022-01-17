@@ -17,3 +17,21 @@
 .buttons-container {
   justify-content: space-between;
 }
+input:focus {
+  outline: 2px solid #e5eb69;
+}
+.amount-button:hover {
+  background-color: #1f505b;
+  color: #fff;
+}
+.success-image {
+  height: 50vh;
+  border-radius: 10px;
+  background-color: #f1f4d5;
+}
+.success-text {
+  width: 21rem;
+}
+.success-text h3 {
+  text-align: center;
+}

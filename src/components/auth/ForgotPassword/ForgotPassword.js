@@ -22,15 +22,15 @@ export default function ForgotPassword() {
         <div className='signup'>
             <div className='signup-container'>
                 <div className='form-part'>
-                    <div className='mb-4'>
+                    <div className='mb-5'>
                         <img className='mb-2' src={LOGO} alt="" />
-                        <h1>Password Recovery</h1>
+                        <h2>Password Recovery</h2>
                         <p className='p-faint'>Let’s help you get back in</p>
                     </div>
 
                     <div className=''>
-                        <form className="signup-form">
-                            <div className="form-group mb-4">
+                        <form className="signup-form ">
+                            <div className="form-group mb-5">
                                 <input
                                     autoComplete="off"
                                     type="text"
@@ -40,19 +40,16 @@ export default function ForgotPassword() {
                                     onChange={handleChange}
                                 />
                             </div>
-                            <div className="form-group">
-                                <button className="btn" type="submit">
-                                    Login
+                            <div className="opt-buttons">
+                                <button className="opt-btn-reset" type="submit">
+                                    Reset Password
+                                </button>
+                                <button className="opt-btn-login" type="submit">
+                                    Back to Login
                                 </button>
                             </div>
                         </form>
                     </div>  
-                </div>
-                <div className='forgot'>
-                    <p>Forgot Password?</p>
-                </div>
-                <div className='terms'>
-                    <p>By continuing you accept our Terms of Use and Privacy Policy.</p>
                 </div>
             </div>
         </div>

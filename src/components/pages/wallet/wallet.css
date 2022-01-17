@@ -1,0 +1,29 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f1f4d5;
+}
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 780px;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f505b;
+  width: 21rem;
+  height: 10rem;
+  color: #fff;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
