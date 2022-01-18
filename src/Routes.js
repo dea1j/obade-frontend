@@ -20,6 +20,8 @@ import MyWallet from "./components/pages/wallet/MyWallet";
 import PurchaseAirtime from "./components/pages/purchase/purchaseAirtime";
 import PurchaseData from "./components/pages/purchase/purchaseData";
 import AirtimeSuccess from "./components/pages/purchase/AirtimeSuccess";
+import PersonalInfo from "./components/pages/profile/profile-components/PersonalInfo";
+import Support from "./components/pages/profile/profile-components/Support";
 
 // import ProtectedRoute from "./components/ProtectedRoute";
 import { UserContextProvider } from "./utils/context/UserContext";
@@ -93,6 +95,22 @@ export default function AppRoutes() {
                 element={
                     // <ProtectedRoute>
                     <AirtimeSuccess />
+                    // </ProtectedRoute>
+                }
+                />
+                <Route
+                path="/personalInfo"
+                element={
+                    // <ProtectedRoute>
+                    <PersonalInfo />
+                    // </ProtectedRoute>
+                }
+                />
+                <Route
+                path="/support"
+                element={
+                    // <ProtectedRoute>
+                    <Support />
                     // </ProtectedRoute>
                 }
                 />
